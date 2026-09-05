@@ -25,6 +25,7 @@ namespace ASISYA.Controllers
             CategoryID = c.CategoryID,
             CategoryName = c.CategoryName,
             Description = c.Description,
+            Picture = c.Picture,
             ProductCount = c.Products?.Count ?? 0
         };
 
