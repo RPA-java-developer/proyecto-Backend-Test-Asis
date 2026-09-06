@@ -1,0 +1,37 @@
+# .dockerignore for .NET 8
+
+# Exclude build output and local dependencies (Crucial to prevent architecture/SDK mismatches)
+**/bin/
+**/obj/
+
+# Exclude IDE and tool configurations
+**/.vs/
+**/.vscode/
+*.user
+*.suo
+*.sln.docstates
+
+# Exclude source control
+**/.git/
+**/.gitignore
+**/.gitattributes
+
+# Exclude Docker files themselves (Optional but clean)
+Dockerfile
+docker-compose*
+.dockerignore
+
+# Exclude local publishing and testing files
+**/publish/
+**/out/
+**/.log
+*.log
+
+# Exclude secrets and local configuration files
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/.env
+
+# Exclude frontend dependencies (if using Angular, React, etc., in a SPA project)
+**/node_modules/
+**/dist/
